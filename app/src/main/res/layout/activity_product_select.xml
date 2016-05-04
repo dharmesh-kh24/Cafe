@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#134e7a"
+            android:textSize="8pt"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/information_about"
+            android:textColor="#134e7a"
+            android:textSize="10pt"></TextView>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/selectItem"
+            android:layout_width="386dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioCoffee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:checked="false"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/coffee_machine"
+                android:textColor="#286b9c" />
+
+            <RadioButton
+                android:id="@+id/radioWater"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:checked="false"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/water_dispenser"
+                android:textColor="#286b9c" />
+
+        </RadioGroup>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageBrew"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/mindtree"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/selectArea"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:id="@+id/selectAreaText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_area"
+                android:textColor="#134e7a"
+                android:textSize="10pt" />
+
+            <Spinner
+                android:id="@+id/areaSpinner"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/selectFloor"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_floor_in_global_learning_center"
+                android:textColor="#134e7a"
+                android:textSize="10pt" />
+
+            <Spinner
+                android:id="@+id/floorSpinner"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:visibility="visible"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/selectBlock"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/select_block_in_social_center"
+                android:textColor="#134e7a"
+                android:textSize="10pt" />
+
+            <Spinner
+                android:id="@+id/blockSpinner"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/coffeeInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="25dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/what_s_missing_at_this_coffee_machine"
+                android:textColor="#134e7a"
+                android:textSize="10pt"
+                android:visibility="visible"
+                android:layout_marginBottom="10dp" />
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="visible"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/milkImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/milk"
+                        android:visibility="visible"
+                        android:background="@drawable/image_border"/>
+
+                    <CheckBox
+                        android:id="@+id/milk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:checked="false"
+                        android:onClick="onCheckboxClicked"
+                        android:textColor="#00000000"
+                        android:visibility="visible"
+                        android:text="Milk" />
+                </RelativeLayout>
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_column="1"
+                    android:layout_marginLeft="7dp"
+                    android:layout_row="0"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/sugarImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/sugar"
+                        android:background="@drawable/image_border"/>
+
+                    <CheckBox
+                        android:id="@+id/sugar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:checked="false"
+                        android:onClick="onCheckboxClicked"
+                        android:textColor="#00000000"
+                        android:text="Sugar" />
+                </RelativeLayout>
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:visibility="visible"
+                    android:layout_marginTop="7dp">
+
+                    <ImageView
+                        android:id="@+id/spoonImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/spoon"
+                        android:background="@drawable/image_border"/>
+
+                    <CheckBox
+                        android:id="@+id/spoon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:checked="false"
+                        android:onClick="onCheckboxClicked"
+                        android:textColor="#00000000"
+                        android:text="Spoon" />
+
+                </RelativeLayout>
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_column="2"
+                    android:layout_marginLeft="7dp"
+                    android:layout_row="0"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/coffeeCupImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/coffee_cup"
+                        android:background="@drawable/image_border"/>
+
+                    <CheckBox
+                        android:id="@+id/coffeeCup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:checked="false"
+                        android:onClick="onCheckboxClicked"
+                        android:textColor="#00000000"
+                        android:text="Cup" />
+                </RelativeLayout>
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_column="1"
+                    android:layout_marginLeft="7dp"
+                    android:layout_row="1"
+                    android:visibility="visible"
+                    android:layout_marginTop="7dp">
+
+                    <ImageView
+                        android:id="@+id/teaBagImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/tea_bag"
+                        android:background="@drawable/image_border"/>
+
+                    <CheckBox
+                        android:id="@+id/teabag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:checked="false"
+                        android:onClick="onCheckboxClicked"
+                        android:textColor="#00000000"
+                        android:text="Teabag" />
+                </RelativeLayout>
+
+            </GridLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/waterInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="25dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/what_s_missing_at_this_water_cannister"
+                android:textColor="#134e7a"
+                android:textSize="10pt"
+                android:textIsSelectable="false"
+                android:visibility="visible"
+                android:layout_marginBottom="10dp" />
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:visibility="visible">
+
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_column="0"
+                    android:layout_marginLeft="10dp"
+                    android:layout_row="0"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/waterImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/water"
+                        android:background="@drawable/image_border"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/water"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:checked="false"
+                        android:onClick="onCheckboxClicked"
+                        android:textColor="#00000000"
+                        android:text="Water" />
+                </RelativeLayout>
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_column="1"
+                    android:layout_marginLeft="30dp"
+                    android:layout_row="0"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/waterCupImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/water_cup"
+                        android:background="@drawable/image_border"/>
+
+                    <CheckBox
+                        android:id="@+id/waterCup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:checked="false"
+                        android:onClick="onCheckboxClicked"
+                        android:textColor="#00000000"
+                        android:text="Cup" />
+                </RelativeLayout>
+
+            </GridLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:layout_marginBottom="50dp">
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/submit"
+                android:layout_marginLeft="60dp"
+                android:layout_marginStart="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:id="@+id/resetButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reset"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="57dp"
+                android:layout_marginEnd="57dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

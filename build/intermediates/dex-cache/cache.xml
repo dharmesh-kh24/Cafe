@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\Brew\Codebase\Brew\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\jars\libs\internal_impl-23.2.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6e239441500605809818997dd63b62a947195f8c">
+        <dex dex="D:\Brew\Codebase\Brew\app\build\intermediates\pre-dexed\release\internal_impl-23.2.0_cf926755c4bcbc2bc1afbfed15fd2933af085d36.jar" />
+    </item>
+    <item
+        jar="D:\Brew\Codebase\Brew\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e5f32fa48a3eb2de0c987025c11b6e3864b634d9">
+        <dex dex="D:\Brew\Codebase\Brew\app\build\intermediates\pre-dexed\release\com.android.support-support-v4-23.2.0_1e006d8df9d5f598a2ee2c7729f60ee21b5fb5f7.jar" />
+    </item>
+    <item
+        jar="D:\Brew\Codebase\Brew\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="292a9fa091757208efa65e77eef63088247e51f3">
+        <dex dex="D:\Brew\Codebase\Brew\app\build\intermediates\pre-dexed\release\com.android.support-support-vector-drawable-23.2.0_6736e889cee166de7f2250987b08ac631b629d69.jar" />
+    </item>
+    <item
+        jar="D:\Brew\Codebase\Brew\app\libs\firebase-client-android-2.5.2.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="b54cf0400e2248d6c133c7b0a77dea1be09978cc">
+        <dex dex="D:\Brew\Codebase\Brew\app\build\intermediates\pre-dexed\release\firebase-client-android-2.5.2_be9537b0f39202466491a6cbd7614def083051ce.jar" />
+    </item>
+    <item
+        jar="D:\Brew\Codebase\Brew\app\libs\additionnal.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="bd9e8dc422bb8c8405359947fe9f4282b49f57f4">
+        <dex dex="D:\Brew\Codebase\Brew\app\build\intermediates\pre-dexed\release\additionnal_2fb32decf2a7419042dc9934bcbcf82ec804b53a.jar" />
+    </item>
+    <item
+        jar="D:\Android\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.2.0\support-annotations-23.2.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="c5bf571bb10462bd90e5419ade67793f71acbc87">
+        <dex dex="D:\Brew\Codebase\Brew\app\build\intermediates\pre-dexed\release\support-annotations-23.2.0_5934564d1335beda1391e80cd6e00deb895bc6c8.jar" />
+    </item>
+    <item
+        jar="D:\Brew\Codebase\Brew\app\libs\mail.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="428e267abff0d10802ccde86b915da2c20471160">
+        <dex dex="D:\Brew\Codebase\Brew\app\build\intermediates\pre-dexed\release\mail_4f37eb7053c377249ea014e737b7194942079ee2.jar" />
+    </item>
+    <item
+        jar="D:\Brew\Codebase\Brew\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8c108c22c99e794eff255bb34d2a461200c4cbb0">
+        <dex dex="D:\Brew\Codebase\Brew\app\build\intermediates\pre-dexed\release\com.android.support-animated-vector-drawable-23.2.0_ee42a8589df7376ba009e2517e10d20ec682ad6b.jar" />
+    </item>
+    <item
+        jar="D:\Brew\Codebase\Brew\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6e3578f92f7462d1a935a1d36173e3bdd1234976">
+        <dex dex="D:\Brew\Codebase\Brew\app\build\intermediates\pre-dexed\release\com.android.support-appcompat-v7-23.2.0_9e9bf71cbb0c556fa93d433aece1500969ac74a3.jar" />
+    </item>
+    <item
+        jar="D:\Brew\Codebase\Brew\app\libs\activation.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="d1257cbff6faa44c1f325ae0d9413522d4644383">
+        <dex dex="D:\Brew\Codebase\Brew\app\build\intermediates\pre-dexed\release\activation_cb47f5e6b3d96c58e2f3c7ba25a476afa3ca34da.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Caf\u00E9</string>
+    <string name="action_settings">About</string>
+    <string name="title_activity_product_select">Caf\u00E9</string>
+    <string-array name="areaArray">
+        <item>--Select--</item>
+        <item>Global Learning Center</item>
+        <item>Social Center</item>
+        <item>Cafeteria</item>
+
+    </string-array>
+    <string-array name="floorArray">
+        <item>--Select--</item>
+        <item>Ground Floor</item>
+        <item>First Floor</item>
+
+    </string-array>
+    <string-array name="blockArray">
+        <item>--Select--</item>
+        <item>Askoka</item>
+        <item>Bakula</item>
+        <item>Champa</item>
+        <item>Deodar</item>
+        <item>Elm</item>
+    </string-array>
+
+    <string name="title_activity_about">About</string>
+    <string name="webFormat"><![CDATA[<html><body style=\"text-align:justify;color:#286b9c;\"> %s </body></Html>]]></string>
+    <string name="about">If anyone in Mindtree Kalinga finds out that a resource (like milk,sugar,water) in any coffee machine or water dispenser is over, then he/she can update this information on the app. This information will be sent to facility staff\'s email.</string>
+    <string name="leadsInfo"><![CDATA[<html>Hema Natarajan (<a href=\"https://social.mindtree.com/myPeople.aspx?accountname=mindtree\\M1002934&Page=user\">M1002934</a>)<br>Vamsi Krishna VVSR (<a href=\"https://social.mindtree.com/myPeople.aspx?accountname=mindtree\\M1033421&Page=user\">M1033421</a>)</html>]]></string>
+    <string name="teamInfo"><![CDATA[<html>Team captain: Dharmesh Khandelwal (<a href=\"https://social.mindtree.com/myPeople.aspx?accountname=mindtree\\M1036144&Page=user\">M1036144</a>)<br>Baibhav Vishal (<a href=\"https://social.mindtree.com/myPeople.aspx?accountname=mindtree\\M1036034&Page=user\">M1036034</a>)<br>Chirayu Singhvi (<a href=\"https://social.mindtree.com/myPeople.aspx?accountname=mindtree\\M1035998&Page=user\">M1035998</a>)<br>Raghav Sharma (<a href=\"https://social.mindtree.com/myPeople.aspx?accountname=mindtree\\M1036143&Page=user\">M1036143</a>)</html>]]></string>
+    <string name="color">#2495ea</string>
+    <string name="format">text/html</string>
+    <string name="unicode">utf-8</string>
+    <string name="brew_resource_provider_app">Caf\u00E9: Resource Provider App</string>
+    <string name="information_about">Information about:</string>
+    <string name="coffee_machine">Coffee Machine</string>
+    <string name="usage">Usage:</string>
+    <string name="water_dispenser">Water Dispenser</string>
+    <string name="leads">Leads:</string>
+    <string name="select_area">Select Area:</string>
+    <string name="exit">Exit</string>
+    <string name="development_team">Development Team:</string>
+    <string name="select_floor_in_global_learning_center">Select Floor in Global Learning Center:</string>
+    <string name="u00a9_mindtree_ltd_nall_rights_reserved">© Mindtree Ltd.\nAll Rights Reserved</string>
+    <string name="select_block_in_social_center">Select Block in Social Center:</string>
+    <string name="what_s_missing_at_this_coffee_machine">What\'s not available at this coffee machine?</string>
+    <string name="what_s_missing_at_this_water_cannister">What\'s not available at this water dispenser?</string>
+    <string name="submit">submit</string>
+    <string name="reset">reset</string>
+    <string name="mindtree_logo">Mindtree Logo</string>
+    <string name="splashscreen">Splashscreen</string>
+    <string name="enter_mid_e_g_m1234567">Enter MID: (e.g. M1234567)</string>
+    <string name="start">Start</string>
+
+</resources>
